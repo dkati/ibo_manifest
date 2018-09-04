@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/"/>
+	   
+   <default revision="refs/heads/kinetic"
+           remote="github"
+           sync-c="true"
+	   sync-j="4" />
+	
+  
+   <!--forks and custom edits-->
+  <project path="src/husky"  		name="dkati/husky"  />
+
+  <include name="snippets/upstream.xml" />
+  <include name="snippets/misc.xml" />
+
+</manifest>
