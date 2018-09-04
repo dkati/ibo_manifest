@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-	<remote name="github"
-           	fetch="https://github.com/"/>
-	   
-   	<default revision="refs/heads/kinetic"
-         remote="github"
-           sync-c="true"
-	   sync-j="4" />
-	
+<manifest>	
   
+    <remote name="github"
+            fetch="https://github.com/"/>
+
+    <remote name="ROS"
+            fetch="https://github.com"
+            revision="kinetic"
+            sync-c="true"
+            sync-j="4" />
+
+    <remote name="MatLab"
+            fetch="https://github.com"
+            revision="master"
+            sync-c="true"
+            sync-j="4" />
+
+	   
+    <default 
+            remote="github"
+            sync-c="true"
+	        sync-j="4" />
+
    	<!--forks and custom edits-->
-  	<project path="src/husky"  		name="dkati/husky"  />
+  	<project path="src/husky"  		name="dkati/husky" 		remote="ROS" />
 
   
   	<!--Include misc stuff-->
